@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  License: MyString
+  State: MyString
+  Comment: MyString
+  Tag1: MyString
+  Tag2: MyString
+  Tag3: MyString
+
+two:
+  License: MyString
+  State: MyString
+  Comment: MyString
+  Tag1: MyString
+  Tag2: MyString
+  Tag3: MyString

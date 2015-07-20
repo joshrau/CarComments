@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ahoogahs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>License</th>
+      <th>State</th>
+      <th>Comment</th>
+      <th>Tag1</th>
+      <th>Tag2</th>
+      <th>Tag3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ahoogahs.each do |ahoogah| %>
+      <tr>
+        <td><%= ahoogah.License %></td>
+        <td><%= ahoogah.State %></td>
+        <td><%= ahoogah.Comment %></td>
+        <td><%= ahoogah.Tag1 %></td>
+        <td><%= ahoogah.Tag2 %></td>
+        <td><%= ahoogah.Tag3 %></td>
+        <td><%= link_to 'Show', ahoogah %></td>
+        <td><%= link_to 'Edit', edit_ahoogah_path(ahoogah) %></td>
+        <td><%= link_to 'Destroy', ahoogah, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ahoogah', new_ahoogah_path %>
